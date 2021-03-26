@@ -2,8 +2,7 @@ name: Pipeline
 
 on:
   push:
-    paths:
-      - '**.json'
+    branches: [dev]
 
 jobs:
   test:
@@ -15,7 +14,7 @@ jobs:
       - name: Check JSON syntax
         uses: limitusus/json-syntax-check@v1
         with:
-          pattern: "\\.json$"
+          pattern: "database.json$"
 
       - name: Setup python
         uses: actions/setup-python@v2
