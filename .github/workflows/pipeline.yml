@@ -2,7 +2,8 @@ name: Pipeline
 
 on:
   push:
-    branches: [dev]
+    paths:
+      - 'database.json'
 
 jobs:
   CICD:
