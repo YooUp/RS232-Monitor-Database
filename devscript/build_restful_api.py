@@ -6,6 +6,7 @@ import json
 import os
 
 OUTPUT_FOLDER = 'build/'
+MONITORS_FOLDER = 'monitors/'
 
 
 def read_json(file_name):
@@ -24,11 +25,13 @@ def save_json(file_name, data):
 
 def main(file_name):
     os.makedirs(OUTPUT_FOLDER)
+    os.makedirs(OUTPUT_FOLDER + MONITORS_FOLDER)
 
     data = read_json(file_name)
-    index = file_name.rfind('.')
-    save_json(OUTPUT_FOLDER + file_name[:index], data)
     save_json(OUTPUT_FOLDER + file_name, data)
+    
+    for monitor in data['monitors']:
+        save_json(OUTPUT_FOLDER + MONITORS_FOLDER + monitor['name'].lower().replace(' ','_') + ".json", monitor)
      
 
 if __name__ == "__main__":
