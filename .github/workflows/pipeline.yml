@@ -14,4 +14,4 @@ jobs:
       - name: Check JSON syntax
         uses: limitusus/json-syntax-check@v1
         with:
-          pattern: "\\.json$"
+          pattern: "database.json$"
