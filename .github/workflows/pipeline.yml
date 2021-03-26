@@ -5,7 +5,7 @@ on:
     branches: [dev]
 
 jobs:
-  test:
+  CICD:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -25,15 +25,24 @@ jobs:
         run: |
           python devscript/check_mandatory_fields.py database.json
 
-     
       - name: Create MONITORS.md file
         run: |
           python devscript/create_monitors_md.py database.json
-          
+
       - uses: EndBug/add-and-commit@v7
         with:
           add: 'MONITORS.md'
           message: 'Update MONITORS.md'
+          push: true
+
+      - name: Increment version
+        run: |
+          python devscript/increment_version.py database.json
+
+      - uses: EndBug/add-and-commit@v7
+        with:
+          add: 'database.md'
+          message: 'Increment the database version'
           push: true
 
       - name: Build Restful API
