@@ -1,6 +1,6 @@
 {
 	"version" : "2",
-	"monitors":[
+	"monitors":
 		{
 			"name":"BenQ",
 			"doc":"https://benqimage.blob.core.windows.net/driver-us-file/RS232-commands_all%20Product%20Lines.pdf",
