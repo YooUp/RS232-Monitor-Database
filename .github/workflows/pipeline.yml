@@ -2,8 +2,7 @@ name: Pipeline
 
 on:
   push:
-    paths:
-      - '**.json'
+    branches: [dev]
 
 jobs:
   test:
