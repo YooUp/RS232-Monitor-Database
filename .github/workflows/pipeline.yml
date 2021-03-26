@@ -1,0 +1,18 @@
+name: Pipeline
+
+on:
+  push:
+    paths:
+      - '**.json'
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      
+      - name: Check JSON syntax
+        uses: limitusus/json-syntax-check@v1
+        with:
+          pattern: "\\.json$"
