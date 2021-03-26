@@ -4,7 +4,7 @@
 		{
 			"name":"BenQ",
 			"doc":"https://benqimage.blob.core.windows.net/driver-us-file/RS232-commands_all%20Product%20Lines.pdf",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{
 				"SET_POWER_ON":[56,48,49,115,33,48,48,49,13],
 				"SET_POWER_OFF":[56,48,49,115,33,48,48,50,13],
@@ -36,7 +36,7 @@
 		{
 			"name":"LG",
 			"doc":"http://partner.lge.com/fr/portal/download/download/retrieveManualList.lge",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{
 				"SET_POWER_ON":[107,97,32,0,32,1,13],
 				"SET_POWER_OFF":[107,97,32,0,32,0,13],
@@ -65,7 +65,7 @@
 		{
 			"name":"Newline",
 			"doc":"https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH_X4K_usermanual.pdf",
-			"baudRate":19200,
+			"baudrate":19200,
 			"commands":{
 				"SET_POWER_ON":[127,8,153,162,179,196,2,255,1,0,207],
 				"SET_POWER_OFF":[127,8,153,162,179,196,2,255,1,1,207],
@@ -94,7 +94,7 @@
 		{
 			"name":"SmartBoard",
 			"doc":"http://downloads.smarttech.com/media/sitecore/en/support/product/sbfpd/8000series/guides/rs232configsbid8070iv22apr2011.pdf",
-			"baudRate":19200,
+			"baudrate":19200,
 			"commands":{
 				"SET_POWER_ON":[115,101,116,32,112,111,119,101,114,115,116,97,116,101,61,111,110],
 				"SET_POWER_OFF":[115,101,116,32,112,111,119,101,114,115,116,97,116,101,61,111,102,102],
@@ -127,7 +127,7 @@
 		{
 			"name":"DELL",
 			"doc":"http://ftp.dell.com/manuals/all-products/esuprt_display_projector/esuprt_Display/dell-c8618qt-monitor_Reference%20Guide2_en-us.pdf",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":
 			{
 				"SET_POWER_ON":[55,81,3,234,33,1,175],
@@ -161,7 +161,7 @@
 		{
 			"name":"Avocor",
 			"doc":"https://www.avocor.com/wp-content/uploads/2018/05/RS232-Command-Codes-2019.pdf",
-			"baudRate":38400,
+			"baudrate":38400,
 			"commands":{
 				"SET_POWER_ON":[127,8,153,162,179,196,2,255,1,0,207],
 				"SET_POWER_OFF":[127,8,153,162,179,196,2,255,1,1,207],
@@ -190,7 +190,7 @@
 		{
 			"name":"Sharp",
 			"doc":"http://www.sharp-sbs.com/portals/0/downloads/Manuals/PN-UH601_701_Operation_Manual.pdf",
-			"baudRate":115200,
+			"baudrate":115200,
 			"commands":{
 				"SET_POWER_ON":[80,79,87,82,1],
 				"SET_POWER_OFF":[80,79,87,82,0],
@@ -218,7 +218,7 @@
 		{
 			"name":"Iiyama",
 			"doc":"https://cdn.iiyama.com/f/7df9a5d921401d3399c3781da7688a8d_lexx40uhs-rs232-and-lan-commands.pdf",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{
 				"SET_POWER_ON":[166,0,0,0,0,4,1,24,2,184],
 				"SET_POWER_OFF":[166,0,0,0,0,4,1,24,1,187],
@@ -254,7 +254,7 @@
 		{
 			"name":"Promothean",
 			"doc":"https://support.prometheanworld.com/article/1595/",
-			"baudRate":38400,
+			"baudrate":38400,
 			"commands":{
 				"SET_POWER_ON":[246,1,1,1,249,111],
 				"SET_POWER_OFF":[246,1,1,0,248,111],
@@ -282,7 +282,7 @@
 		{
 			"name":"Samsung",
 			"doc":"https://www.samsung.com/us/support/troubleshooting/TSG01201603/",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{
 				"SET_POWER_ON":[8,34,0,0,0,2,212],
 				"SET_POWER_OFF":[8,34,0,0,0,1,213],
@@ -323,7 +323,7 @@
 		{
 			"name":"Optoma RK",
 			"doc":"https://www.optoma.fr/ContentStorage/Documents/89bdf74e-25f1-47d7-b2bb-9113ad0629a3.pdf",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{
 				"SET_POWER_ON":[126,48,48,48,48,32,49,13],
 				"SET_POWER_OFF":[126,48,48,48,48,32,48,13],
@@ -351,7 +351,7 @@
 		{
 			"name":"Optoma RKe",
 			"doc":"https://www.optoma.fr/ContentStorage/Documents/196b8abb-f43d-4eb1-a46d-21cbeb9660ea.pdf",
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{
 				"SET_POWER_ON":[58,48,49,83,48,48,48,51,13],
 				"SET_POWER_OFF":[58,48,49,83,48,48,48,50,13],
@@ -379,7 +379,7 @@
 		{
 			"name":"Sony", 
 			"doc" : "https://hf-files-oregon.s3.amazonaws.com/hdpjustaddpower_kb_attachments/2016/04-20/ab25a088-38d8-41a8-a136-fabda0005a1e/RS232_XBR5_protocol.pdf", 
-			"baudRate":9600, 
+			"baudrate":9600, 
 			"commands":{ 
 				"SET_POWER_ON":[140,0,0,2,1,143], 
 				"SET_POWER_OFF":[140,0,0,2,0,142],
@@ -412,7 +412,7 @@
 		{
 			"name":"EasyPitch",
 			"doc" : "http://assistance.easypitch.fr/wp-content/uploads/documents/Commande_API_RS232.pdf", 
-			"baudRate":115200, 
+			"baudrate":115200, 
 			"commands":{ 
 				"SET_POWER_ON":[169,17,0,1,138], 
 				"SET_POWER_OFF":[169,17,0,0,138],
@@ -440,7 +440,7 @@
 		{
 			"name":"Philips",
 			"doc" : "https://shop.kindermann.de/erp/KCO/avs/3/3007/3007000000/01_Anleitungen+Doku/RS232Codes.pdf", 
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{ 
 				"SET_POWER_ON":[6,1,0,24,2,29], 
 				"SET_POWER_OFF":[6,1,0,24,1,30],
@@ -469,7 +469,7 @@
 		{
 			"name":"Speechi",
 			"doc" : "https://speechi-support.s3.amazonaws.com/Screens/SPEECHI_TOUCH/Fiche-technique/RS232_code.pdf", 
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{ 
 				"SET_POWER_ON":[170,187,204,1,0,0,1,221,238,255], 
 				"SET_POWER_OFF":[170,187,204,1,1,0,2,221,238,255],
@@ -494,7 +494,7 @@
 		{
 			"name":"CTouch",
 			"doc" : "https://support.ctouch.eu/hc/en-us/categories/360002739100-Canvas-Series", 
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{ 
 				"SET_POWER_ON":[169,17,0,1,138], 
 				"SET_POWER_OFF":[169,17,0,0,138],
@@ -533,7 +533,7 @@
 		{
 			"name":"Nec",
 			"doc" : "https://www.sharpnecdisplays.eu/p/download/v/5d770ae3337e3f93a6cfa7906f09aa52/cp/Products/LargeFormatDisplays/Products/CurrentProducts/Shared/Command_Lists/External_Control_Rev1.8%28G4%29.pdf?fn=External_Control_Rev1.8%28G4%29.pdf", 
-			"baudRate":9600,
+			"baudrate":9600,
 			"commands":{ 
 				"SET_POWER_ON":[1,48,42,48,65,48,12,2,67,50,48,51,68,54,48,48,48,49,3,87,13], 
 				"SET_POWER_OFF":[1,48,42,48,65,48,12,2,67,50,48,51,68,54,48,48,48,52,3,82,13],
