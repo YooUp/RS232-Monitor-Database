@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/YooUp/RS232-Monitor-Commands/Pipeline)
+
 # RS232 Monitor Commands
 
 This is a public database for all the known RS232 commands for professionnal screens, monitors and projectors. Feel free to contribute !
