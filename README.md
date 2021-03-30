@@ -11,4 +11,4 @@ You can also query by monitor (eg. : https://yooup.github.io/RS232-Monitor-Comma
 
 ## Supported monitors
 
-Check the [MONITORS.md](https://github.com/YooUp/RS232-Monitor-Commands/blob/master/database.json) file for a full list of supported monitors.
+Check the [MONITORS.md](https://github.com/YooUp/RS232-Monitor-Commands/blob/master/MONITORS.md) file for a full list of supported monitors.
