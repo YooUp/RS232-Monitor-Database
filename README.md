@@ -15,7 +15,7 @@ You can also query by monitor (eg. : https://yooup.github.io/RS232-Monitor-Comma
 
 ## Database structure
 
-The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/blob/master/database.json). Its structure is the following :
+The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/blob/master/database/monitors.json). Its structure is the following :
 
 #### General structure
 
@@ -46,3 +46,24 @@ The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/bl
 > - `SET_POWER_ON` : To power on the monitor.
 > - `SET_INPUT_HDMI1` : To set the input to HDMI1.
 > - `GET_VOLUME` : To get the current volume.
+
+
+## Contribution
+
+#### Add a new monitor
+
+If the monitor you want to work on is not in the database, please share the RS232 codes with us by adding it:
+
+- Fork
+- Create a new json file in the [following directory](https://github.com/YooUp/RS232-Monitor-Commands/tree/master/database/monitors). Make sure that the structure is correct.
+- Commit
+- Pull request
+
+#### Fix/Add RS232 codes
+
+It can happen that some RS232 are wrong or missing. If so, you can help us to fix it:
+
+- Fork
+- Edit the json file corresponding to your monitor
+- Commit
+- Pull request
