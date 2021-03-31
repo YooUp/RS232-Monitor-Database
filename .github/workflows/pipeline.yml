@@ -28,10 +28,10 @@ jobs:
 
       - name: Create monitors.json file
         run: |
-          export VERSION=$(python devscript/build_monitors_json.)
+          export VERSION=$(python devscript/build_monitors_json.py)
           echo "::set-env name=VERSION::$VERSION"
-      env:
-        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
+        env:
+          ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       - name: Create MONITORS.md file
         run: |
