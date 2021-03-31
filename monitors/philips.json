@@ -1,1 +1,29 @@
-{"name": "Philips", "doc": "https://shop.kindermann.de/erp/KCO/avs/3/3007/3007000000/01_Anleitungen+Doku/RS232Codes.pdf", "baudrate": 9600, "commands": {"SET_POWER_ON": [6, 1, 0, 24, 2, 29], "SET_POWER_OFF": [6, 1, 0, 24, 1, 30], "SET_VOLUME_LOW": [6, 1, 0, 44, 0, 43], "SET_VOLUME_SOFT": [6, 1, 0, 44, 25, 50], "SET_VOLUME_MEDIUM": [6, 1, 0, 44, 50, 25], "SET_VOLUME_NORMAL": [6, 1, 0, 44, 75, 96], "SET_VOLUME_HIGH": [6, 1, 0, 44, 100, 79], "SET_INPUT_VIDEO1": [9, 1, 0, 172, 1, 0, 1, 0, 164], "SET_INPUT_S_VIDEO1": [9, 1, 0, 172, 1, 1, 1, 0, 165], "SET_INPUT_COMPONENT1": [9, 1, 0, 172, 3, 0, 1, 0, 166], "SET_INPUT_VGA1": [9, 1, 0, 172, 5, 0, 1, 0, 160], "SET_INPUT_HDMI2": [9, 1, 0, 172, 5, 1, 1, 0, 161], "SET_INPUT_DP2": [9, 1, 0, 172, 6, 1, 1, 0, 162], "SET_INPUT_USB2": [9, 1, 0, 172, 6, 0, 1, 0, 163], "SET_INPUT_DVI2": [9, 1, 0, 172, 7, 0, 1, 0, 162], "SET_INPUT_DP1": [9, 1, 0, 172, 7, 1, 1, 0, 163], "SET_INPUT_OPS": [9, 1, 0, 172, 8, 0, 1, 0, 173], "SET_INPUT_USB1": [9, 1, 0, 172, 8, 1, 1, 0, 172], "SET_INPUT_HDMI1": [9, 1, 0, 172, 9, 0, 1, 0, 172], "SET_INPUT_DVI1": [9, 1, 0, 172, 9, 1, 1, 0, 173]}}
+{
+	"name":"Philips",
+	"doc" : "https://shop.kindermann.de/erp/KCO/avs/3/3007/3007000000/01_Anleitungen+Doku/RS232Codes.pdf", 
+	"baudrate":9600,
+	"commands":{ 
+		"SET_POWER_ON":[6,1,0,24,2,29], 
+		"SET_POWER_OFF":[6,1,0,24,1,30],
+		
+		"SET_VOLUME_LOW":[6,1,0,44,0,43],
+		"SET_VOLUME_SOFT":[6,1,0,44,25,50],
+		"SET_VOLUME_MEDIUM":[6,1,0,44,50,25],
+		"SET_VOLUME_NORMAL":[6,1,0,44,75,96],
+		"SET_VOLUME_HIGH":[6,1,0,44,100,79],
+		
+		"SET_INPUT_VIDEO1":[9,1,0,172,1,0,1,0,164],
+		"SET_INPUT_S_VIDEO1":[9,1,0,172,1,1,1,0,165],
+		"SET_INPUT_COMPONENT1":[9,1,0,172,3,0,1,0,166],
+		"SET_INPUT_VGA1":[9,1,0,172,5,0,1,0,160],
+		"SET_INPUT_HDMI2":[9,1,0,172,5,1,1,0,161],
+		"SET_INPUT_DP2":[9,1,0,172,6,1,1,0,162],
+		"SET_INPUT_USB2":[9,1,0,172,6,0,1,0,163],
+		"SET_INPUT_DVI2":[9,1,0,172,7,0,1,0,162],
+		"SET_INPUT_DP1":[9,1,0,172,7,1,1,0,163],
+		"SET_INPUT_OPS":[9,1,0,172,8,0,1,0,173],
+		"SET_INPUT_USB1":[9,1,0,172,8,1,1,0,172],
+		"SET_INPUT_HDMI1":[9,1,0,172,9,0,1,0,172],
+		"SET_INPUT_DVI1":[9,1,0,172,9,1,1,0,173]
+	}
+}
