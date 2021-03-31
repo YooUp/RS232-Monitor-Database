@@ -3,7 +3,7 @@ name: Pipeline
 on:
   push:
     paths:
-      - 'monitors/*.json'
+      - 'database/monitors/*.json'
 
 jobs:
   CICD:
