@@ -39,7 +39,7 @@ jobs:
 
       - uses: EndBug/add-and-commit@v7
         with:
-          add: '["monitors.json","MONITORS.md"]'
+          add: '["database/monitors.json","MONITORS.md"]'
           message: 'Update version ${{ env.VERSION }}'
           push: true
 
