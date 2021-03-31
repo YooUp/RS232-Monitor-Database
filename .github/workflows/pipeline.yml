@@ -43,8 +43,29 @@ jobs:
           message: 'Update version ${{ env.VERSION }}'
           push: true
 
+      - name: Publish release
+        uses: "marvinpinto/action-automatic-releases@latest"
+        with:
+          repo_token: "${{ secrets.GITHUB_TOKEN }}"
+          automatic_release_tag: ${{ env.VERSION }}
+          prerelease: false
+          title: B4D-${{ env.VERSION }}
+          files: |
+            ./database/monitors.json
+
+      - name: Create branch
+        uses: peterjgrainger/action-create-branch@v2.0.1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: v${{ env.VERSION }}
+
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./database
+
+
+
+
