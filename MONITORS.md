@@ -1,0 +1,21 @@
+# Supported Monitors
+
+- Avocor
+- BenQ
+- CTouch
+- DELL
+- EasyPitch
+- Iiyama
+- LG
+- Nec
+- Newline
+- Optoma RK
+- Optoma RKe
+- Philips
+- Promethean
+- Samsung Exlink
+- Samsung MDCP
+- Sharp PNHW
+- SmartBoard
+- Sony
+- Speechi
