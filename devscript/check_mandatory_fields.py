@@ -5,6 +5,7 @@ import sys
 import json
 import os
 
+INPUT_FOLDER = 'database/monitors/'
 
 def read_json(file_name):
     if(not os.path.isfile(file_name)):
@@ -20,25 +21,21 @@ def save_json(file_name, data):
         file.write(json.dumps(data))
 
 
-def main(database_file):
-    data = read_json(database_file)
+def main():
     missing_fields = []
     
-    if not "version" in data:
-        missing_fields.append(" - Mandatory field 'version' is missing in the database\n")
-        
-    if not "monitors" in data:
-        missing_fields.append(" - Mandatory field 'monitors' is missing in the database\n")
-    else:
-        for monitor in data['monitors']:
-            if not "name" in monitor:
-                missing_fields.append(" - Mandatory field 'name' is missing for the monitor at rank %d\n" % data['monitors'].index(monitor))
-            if not "baudrate" in monitor:
-                missing_fields.append(" - Mandatory field 'baudrate' is missing for the monitor %s\n" % monitor['name'])
-            if not "doc" in monitor:
-                missing_fields.append(" - Mandatory field 'doc' is missing for the monitor %s\n" % monitor['name'])
-            if not "commands" in monitor:
-                missing_fields.append(" - Mandatory field 'commands' is missing for the monitor %s\n" % monitor['name'])
+    database_files = [INPUT_FOLDER + f for f in os.listdir(INPUT_FOLDER) if os.path.isfile(os.path.join(INPUT_FOLDER, f))]
+    for database_file in database_files:
+        data = read_json(database_file)
+
+        if not "name" in data:
+            missing_fields.append(" - Mandatory field 'name' is missing in file %s\n" % database_file)
+        if not "baudrate" in data:
+            missing_fields.append(" - Mandatory field 'baudrate' is missing in file %s\n" % database_file)
+        if not "doc" in data:
+            missing_fields.append(" - Mandatory field 'doc' is missing in file %s\n" % database_file)
+        if not "commands" in data:
+            missing_fields.append(" - Mandatory field 'commands' is missing in file %s\n" % database_file)
 
     if len(missing_fields) > 0:
         message = "Some mandatory fields are missing:\n"
@@ -49,6 +46,4 @@ def main(database_file):
     print("No mandatory field is missing")
 
 if __name__ == "__main__":
-    if(len(sys.argv) != 2):
-        raise Exception("This program needs the database to check in parameter")
-    main(sys.argv[1])
+    main()

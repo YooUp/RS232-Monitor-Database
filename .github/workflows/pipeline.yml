@@ -3,7 +3,7 @@ name: Pipeline
 on:
   push:
     paths:
-      - 'database.json'
+      - 'monitors/*.json'
 
 jobs:
   CICD:
@@ -15,7 +15,7 @@ jobs:
       - name: Check JSON syntax
         uses: limitusus/json-syntax-check@v1
         with:
-          pattern: "database.json$"
+          pattern: "\\.json$"
 
       - name: Setup python
         uses: actions/setup-python@v2
@@ -24,34 +24,27 @@ jobs:
 
       - name: Check mandatory fields
         run: |
-          python devscript/check_mandatory_fields.py database.json
+          python devscript/check_mandatory_fields.py
+
+      - name: Create monitors.json file
+        run: |
+          export VERSION=$(python devscript/build_monitors_json.)
+          echo "::set-env name=VERSION::$VERSION"
+      env:
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
       - name: Create MONITORS.md file
         run: |
-          python devscript/create_monitors_md.py database.json
+          python devscript/build_monitors_md.py
 
       - uses: EndBug/add-and-commit@v7
         with:
-          add: 'MONITORS.md'
-          message: 'Update MONITORS.md'
+          add: '["monitors.json","MONITORS.md"]'
+          message: 'Update version ${{ env.VERSION }}'
           push: true
-
-      - name: Increment version
-        run: |
-          python devscript/increment_version.py database.json
-
-      - uses: EndBug/add-and-commit@v7
-        with:
-          add: 'database.md'
-          message: 'Increment the database version'
-          push: true
-
-      - name: Build Restful API
-        run: |
-          python devscript/build_restful_api.py database.json
 
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir: ./database
