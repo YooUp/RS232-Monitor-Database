@@ -19,3 +19,4 @@
 - SmartBoard
 - Sony
 - Speechi
+- Speechi
