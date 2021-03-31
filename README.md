@@ -38,11 +38,13 @@ The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/bl
 - `value` : List of integers to send via RS232 to perform this action.
 
 > Example:
-> ```
+> 
+> ```json
 > "SET_POWER_ON":[1,2,3,4,5,6,7,8,9],
 > "SET_INPUT_HDMI1":[1,2,3,4,5,6,7,8,9],
 > "GET_VOLUME":[1,2,3,4,5,6,7,8,9],
 > ```
+> 
 > - `SET_POWER_ON` : To power on the monitor.
 > - `SET_INPUT_HDMI1` : To set the input to HDMI1.
 > - `GET_VOLUME` : To get the current volume.
@@ -67,3 +69,14 @@ It can happen that some RS232 are wrong or missing. If so, you can help us to fi
 - Edit the json file corresponding to your monitor
 - Commit
 - Pull request
+
+## FAQ
+
+#### The `^M` character keeps showing when I run the `git diff` command
+
+Unix and Windows does handle line endings the same way. Windows use `CR` `LF` while Unix use `LF`.
+Run the following command to automatically convert line endings for your platform :
+
+```
+git config --global core.autocrlf true
+```
