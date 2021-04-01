@@ -2,6 +2,8 @@
 	"name":"Sharp PNHW",
 	"doc":"https://www.sharp.co.uk/cps/rde/xbcr/documents/documents/Marketing/Operational_manuals/PNHW861-HW751-HW651-HW551-HW501-HW431_manual_English.pdf",
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_ON":[80,79,87,82,48,48,48,49,13],
 		"SET_OFF":[80,79,87,82,48,48,48,48,13],

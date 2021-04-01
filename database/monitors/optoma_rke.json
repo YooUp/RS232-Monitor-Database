@@ -2,6 +2,8 @@
 	"name":"Optoma RKe",
 	"doc":"https://www.optoma.fr/ContentStorage/Documents/196b8abb-f43d-4eb1-a46d-21cbeb9660ea.pdf",
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[58,48,49,83,48,48,48,51,13],
 		"SET_POWER_OFF":[58,48,49,83,48,48,48,50,13],

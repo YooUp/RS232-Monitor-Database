@@ -1,7 +1,9 @@
 {
 	"name":"EasyPitch",
 	"doc" : "http://assistance.easypitch.fr/wp-content/uploads/documents/Commande_API_RS232.pdf", 
-	"baudrate":115200, 
+	"baudrate":115200,
+	"stopbit":1,
+	"parity":0,
 	"commands":{ 
 		"SET_POWER_ON":[169,17,0,1,138], 
 		"SET_POWER_OFF":[169,17,0,0,138],

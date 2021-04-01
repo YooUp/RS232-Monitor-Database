@@ -2,6 +2,8 @@
 	"name":"CTouch",
 	"doc" : "https://support.ctouch.eu/hc/en-us/categories/360002739100-Canvas-Series", 
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{ 
 		"SET_POWER_ON":[169,17,0,1,138], 
 		"SET_POWER_OFF":[169,17,0,0,138],
