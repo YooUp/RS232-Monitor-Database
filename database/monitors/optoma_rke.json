@@ -1,5 +1,5 @@
 {
-	"name":"Optoma RKe",
+	"name":"OptomaRKe",
 	"doc":"https://www.optoma.fr/ContentStorage/Documents/196b8abb-f43d-4eb1-a46d-21cbeb9660ea.pdf",
 	"baudrate":9600,
 	"stopbit":1,
@@ -13,7 +13,7 @@
 		"SET_VOLUME_50":[58,48,49,83,56,48,53,48,13],
 		"SET_VOLUME_75":[58,48,49,83,56,48,55,53,13],
 		"SET_VOLUME_100":[58,48,49,83,56,49,48,48,13],
-
+		
 		"SET_BRIGHTNESS_0":[58,48,49,83,53,48,48,48,13],
 		"SET_BRIGHTNESS_25":[58,48,49,83,53,48,50,53,13],
 		"SET_BRIGHTNESS_50":[58,48,49,83,53,48,53,48,13],

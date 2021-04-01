@@ -1,11 +1,11 @@
 {
 	"name":"Nec",
-	"doc" : "https://www.sharpnecdisplays.eu/p/download/v/5d770ae3337e3f93a6cfa7906f09aa52/cp/Products/LargeFormatDisplays/Products/CurrentProducts/Shared/Command_Lists/External_Control_Rev1.8%28G4%29.pdf?fn=External_Control_Rev1.8%28G4%29.pdf", 
+	"doc":"https://www.sharpnecdisplays.eu/p/download/v/5d770ae3337e3f93a6cfa7906f09aa52/cp/Products/LargeFormatDisplays/Products/CurrentProducts/Shared/Command_Lists/External_Control_Rev1.8%28G4%29.pdf?fn=External_Control_Rev1.8%28G4%29.pdf",
 	"baudrate":9600,
 	"stopbit":1,
 	"parity":0,
-	"commands":{ 
-		"SET_POWER_ON":[1,48,42,48,65,48,12,2,67,50,48,51,68,54,48,48,48,49,3,87,13], 
+	"commands":{
+		"SET_POWER_ON":[1,48,42,48,65,48,12,2,67,50,48,51,68,54,48,48,48,49,3,87,13],
 		"SET_POWER_OFF":[1,48,42,48,65,48,12,2,67,50,48,51,68,54,48,48,48,52,3,82,13],
 		
 		"SET_VOLUME_0":[1,48,42,48,69,48,10,2,48,48,54,50,48,48,48,48,3,80,13],

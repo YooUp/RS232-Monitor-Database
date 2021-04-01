@@ -1,5 +1,5 @@
 {
-	"name":"Sharp PNHW",
+	"name":"SharpPNHW",
 	"doc":"https://www.sharp.co.uk/cps/rde/xbcr/documents/documents/Marketing/Operational_manuals/PNHW861-HW751-HW651-HW551-HW501-HW431_manual_English.pdf",
 	"baudrate":9600,
 	"stopbit":1,
