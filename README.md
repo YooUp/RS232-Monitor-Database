@@ -27,13 +27,13 @@ The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/bl
 - `name` : Name of the manufacturer.
 - `doc` : Link to the official documentation where the RS232 codes are taken from.
 - `baudrate` : Baudrate of the RS232 transmission.
-- `commands` : List of RS232 commands. Each key is associated with an RS232 code in decimal.
+- `commands` : List of RS232 commands. Each key is associated with a RS232 code in decimal.
 
 #### Command structure
 
 - `key` : String representing the action to do:
-  - `SET\_CATEGORY\_VALUE`
-  - `GET\_CATEGORY`
+  - `SET_CATEGORY_VALUE`
+  - `GET_CATEGORY`
 
 - `value` : List of integers to send via RS232 to perform this action.
 
@@ -57,13 +57,13 @@ The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/bl
 If the monitor you want to work on is not in the database, please share the RS232 codes with us by adding it:
 
 - Fork
-- Create a new json file in the [following directory](https://github.com/YooUp/RS232-Monitor-Commands/tree/master/database/monitors). Make sure that the structure is correct.
+- Create a new json file in the [following directory](https://github.com/YooUp/RS232-Monitor-Commands/tree/master/database/monitors). Make sure that the structure is correct
 - Commit
 - Pull request
 
 #### Fix/Add RS232 codes
 
-It can happen that some RS232 are wrong or missing. If so, you can help us to fix it:
+Some RS232 codes could be wrong or missing. If so, you can help us to fix it:
 
 - Fork
 - Edit the json file corresponding to your monitor
@@ -74,9 +74,16 @@ It can happen that some RS232 are wrong or missing. If so, you can help us to fi
 
 #### The `^M` character keeps showing when I run the `git diff` command
 
-Unix and Windows does handle line endings the same way. Windows use `CR` `LF` while Unix use `LF`.
+Unix and Windows doesn't handle line endings the same way. Windows use `CR` `LF` while Unix use `LF`.
 Run the following command to automatically convert line endings for your platform :
 
 ```
 git config --global core.autocrlf true
 ```
+
+#### How can I test the RS232 codes ?
+
+- Buy a [USB to RS232 adapter](https://www.google.com/search?q=rs232+usb+adapter&source=lnms&tbm=shop&sa=X&ved=2ahUKEwj59o3d0t3vAhV6RhUIHVg4CUkQ_AUoAXoECAEQAw&biw=1908&bih=926) (DB9 or Jack)
+- Use a software like [Docklight](https://docklight.de/information/) to send the codes. You can choose between ASCII, HEX, DEC or BINARY as input.
+
+_The RS232 DB9 input on monitors can be either male or female. Make sure to have the right adapter or buy a [RS232 gender changer](https://www.google.com/search?q=RS232+gender+changer&biw=1908&bih=926&tbm=shop&ei=2A5mYIr5EPTUxgOQrraoBg&oq=RS232+gender+changer&gs_lcp=Cgtwcm9kdWN0cy1jYxADMgQIABATMggIABAeEBMQGDIICAAQHhATEBgyCAgAEB4QExAYMggIABAeEBMQGDIICAAQHhATEBgyCAgAEB4QExAYMggIABAeEBMQGDIICAAQHhATEBgyCggAEAUQHhATEBhQuQlY8gpgyxNoAHAAeACAAWGIAY8CkgEBM5gBAKABAcABAQ&sclient=products-cc&ved=0ahUKEwiKxY7A1N3vAhV0qnEKHRCXDWUQ4dUDCAs&uact=5)._
