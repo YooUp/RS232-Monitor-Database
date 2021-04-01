@@ -1,5 +1,5 @@
 {
-	"name":"Samsung MDCP",
+	"name":"SamsungMDCP",
 	"doc":"http://www.electis.co.il/files/LFD%20Applications/MDC/MDC_Protocol_2020_mdc_ppmxxm6x_Protocolv15.0c.pdf",
 	"baudrate":9600,
 	"stopbit":1,
@@ -7,19 +7,19 @@
 	"commands":{
 		"SET_POWER_ON":[170,17,254,1,1,17],
 		"SET_POWER_OFF":[170,17,254,1,0,16],
-			
+		
 		"SET_VOLUME_0":[170,18,254,1,0,17],
 		"SET_VOLUME_25":[170,18,254,1,25,42],
 		"SET_VOLUME_50":[170,18,254,1,50,67],
 		"SET_VOLUME_75":[170,18,254,1,75,92],
 		"SET_VOLUME_100":[170,18,254,1,100,117],
-			
+		
 		"SET_BRIGHTNESS_0":[170,37,254,1,0,36],
 		"SET_BRIGHTNESS_25":[170,37,254,1,25,61],
 		"SET_BRIGHTNESS_50":[170,37,254,1,50,86],
 		"SET_BRIGHTNESS_75":[170,37,254,1,75,111],
 		"SET_BRIGHTNESS_100":[170,37,254,1,100,136],
-			
+		
 		"SET_INPUT_S_VIDEO1":[170,20,254,1,0,19],
 		"SET_INPUT_COMPONENT1":[170,20,254,1,8,27],
 		"SET_INPUT_AV1":[170,20,254,1,12,31],

@@ -1,5 +1,5 @@
 {
-	"name":"Samsung Exlink",
+	"name":"SamsungExlink",
 	"doc":"https://www.samsung.com/us/support/troubleshooting/TSG01201603/",
 	"baudrate":9600,
 	"stopbit":1,
@@ -19,7 +19,7 @@
 		"SET_BRIGHTNESS_50":[8,34,11,3,0,50,150],
 		"SET_BRIGHTNESS_75":[8,34,11,3,0,75,125],
 		"SET_BRIGHTNESS_100":[8,34,11,3,0,100,100],
-
+		
 		"SET_INPUT_TV1":[8,34,10,0,0,0,204],
 		"SET_INPUT_HDMI1":[8,34,10,0,5,0,199],
 		"SET_INPUT_HDMI2":[8,34,10,0,5,1,198],

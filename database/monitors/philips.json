@@ -1,11 +1,11 @@
 {
 	"name":"Philips",
-	"doc" : "https://shop.kindermann.de/erp/KCO/avs/3/3007/3007000000/01_Anleitungen+Doku/RS232Codes.pdf", 
+	"doc":"https://shop.kindermann.de/erp/KCO/avs/3/3007/3007000000/01_Anleitungen+Doku/RS232Codes.pdf",
 	"baudrate":9600,
 	"stopbit":1,
 	"parity":0,
-	"commands":{ 
-		"SET_POWER_ON":[6,1,0,24,2,29], 
+	"commands":{
+		"SET_POWER_ON":[6,1,0,24,2,29],
 		"SET_POWER_OFF":[6,1,0,24,1,30],
 		
 		"SET_VOLUME_0":[6,1,0,44,0,43],
