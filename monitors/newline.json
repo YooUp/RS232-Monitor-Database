@@ -2,6 +2,8 @@
 	"name":"Newline",
 	"doc":"https://newline-interactive.com/wp-content/uploads/2019/01/TRUTOUCH_X4K_usermanual.pdf",
 	"baudrate":19200,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[127,8,153,162,179,196,2,255,1,0,207],
 		"SET_POWER_OFF":[127,8,153,162,179,196,2,255,1,1,207],

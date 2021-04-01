@@ -2,6 +2,8 @@
 	"name":"Speechi",
 	"doc" : "https://speechi-support.s3.amazonaws.com/Screens/SPEECHI_TOUCH/Fiche-technique/RS232_code.pdf", 
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{ 
 		"SET_POWER_ON":[170,187,204,1,0,0,1,221,238,255], 
 		"SET_POWER_OFF":[170,187,204,1,1,0,2,221,238,255],

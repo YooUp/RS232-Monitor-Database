@@ -2,6 +2,8 @@
 	"name":"Optoma RK",
 	"doc":"https://www.optoma.fr/ContentStorage/Documents/89bdf74e-25f1-47d7-b2bb-9113ad0629a3.pdf",
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[126,48,48,48,48,32,49,13],
 		"SET_POWER_OFF":[126,48,48,48,48,32,48,13],
