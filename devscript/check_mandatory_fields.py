@@ -15,12 +15,6 @@ def read_json(file_name):
         data = json.loads(file.read())
     return data
 
-
-def save_json(file_name, data):
-    with open(file_name, 'w') as file:
-        file.write(json.dumps(data))
-
-
 def main():
     missing_fields = []
     
