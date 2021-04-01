@@ -28,14 +28,14 @@ jobs:
         run: |
           python devscript/check_mandatory_fields.py
 
-      - name: Create monitors.json file
+      - name: Build monitors.json file
         run: |
           export VERSION=$(python devscript/build_monitors_json.py)
           echo "::set-env name=VERSION::$VERSION"
         env:
           ACTIONS_ALLOW_UNSECURE_COMMANDS: 'true'
 
-      - name: Create MONITORS.md file
+      - name: Build MONITORS.md file
         run: |
           python devscript/build_monitors_md.py
 
@@ -62,12 +62,12 @@ jobs:
         with:
           branch: v${{ env.VERSION }}
 
+      - name: Build restful api
+        run: |
+          python devscript/build_restful_api.py
+
       - name: Publish to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./database
-
-
-
-
+          publish_dir: ./restful
