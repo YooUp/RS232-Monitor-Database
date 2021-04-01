@@ -1,0 +1,27 @@
+name: Check JSON
+
+on: 
+  pull_request:
+    paths:
+      - 'database/monitors/*.json'
+
+jobs:
+  JSON:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Check JSON syntax
+        uses: limitusus/json-syntax-check@v1
+        with:
+          pattern: "\\.json$"
+
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.8
+
+      - name: Check mandatory fields
+        run: |
+          python devscript/check_mandatory_fields.py
