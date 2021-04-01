@@ -2,6 +2,8 @@
 	"name":"LG",
 	"doc":"http://partner.lge.com/fr/portal/download/download/retrieveManualList.lge",
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[107,97,32,0,32,1,13],
 		"SET_POWER_OFF":[107,97,32,0,32,0,13],

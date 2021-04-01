@@ -2,6 +2,8 @@
 	"name":"Vestel",
 	"doc":"https://www.vestelvisualsolutions.com/files/vestel-visual-solutions-rs232-lan-customer-control-v1-1-d13c7b454990-929b94049819_F1F87B945757.pdf",
 	"baudrate":115200,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[84,79,78,32,53,48],
 		"SET_POWER_OFF":[84,79,70],

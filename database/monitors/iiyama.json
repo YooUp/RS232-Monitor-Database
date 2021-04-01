@@ -2,6 +2,8 @@
 	"name":"Iiyama",
 	"doc":"https://cdn.iiyama.com/f/7df9a5d921401d3399c3781da7688a8d_lexx40uhs-rs232-and-lan-commands.pdf",
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[166,0,0,0,0,4,1,24,2,184],
 		"SET_POWER_OFF":[166,0,0,0,0,4,1,24,1,187],

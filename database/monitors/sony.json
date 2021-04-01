@@ -1,7 +1,9 @@
 {
 	"name":"Sony", 
 	"doc" : "https://hf-files-oregon.s3.amazonaws.com/hdpjustaddpower_kb_attachments/2016/04-20/ab25a088-38d8-41a8-a136-fabda0005a1e/RS232_XBR5_protocol.pdf", 
-	"baudrate":9600, 
+	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{ 
 		"SET_POWER_ON":[140,0,0,2,1,143], 
 		"SET_POWER_OFF":[140,0,0,2,0,142],

@@ -4,6 +4,8 @@ on:
   push:
     paths:
       - 'database/monitors/*.json'
+    branches:
+      - master
 
 jobs:
   CICD:

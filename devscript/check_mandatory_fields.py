@@ -30,10 +30,14 @@ def main():
 
         if not "name" in data:
             missing_fields.append(" - Mandatory field 'name' is missing in file %s\n" % database_file)
-        if not "baudrate" in data:
-            missing_fields.append(" - Mandatory field 'baudrate' is missing in file %s\n" % database_file)
         if not "doc" in data:
             missing_fields.append(" - Mandatory field 'doc' is missing in file %s\n" % database_file)
+        if not "baudrate" in data:
+            missing_fields.append(" - Mandatory field 'baudrate' is missing in file %s\n" % database_file)
+        if not "stopbit" in data:
+            missing_fields.append(" - Mandatory field 'stopbit' is missing in file %s\n" % database_file)
+        if not "parity" in data:
+            missing_fields.append(" - Mandatory field 'parity' is missing in file %s\n" % database_file)
         if not "commands" in data:
             missing_fields.append(" - Mandatory field 'commands' is missing in file %s\n" % database_file)
 

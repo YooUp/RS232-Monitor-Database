@@ -2,6 +2,8 @@
 	"name":"Samsung Exlink",
 	"doc":"https://www.samsung.com/us/support/troubleshooting/TSG01201603/",
 	"baudrate":9600,
+	"stopbit":1,
+	"parity":0,
 	"commands":{
 		"SET_POWER_ON":[8,34,0,0,0,2,212],
 		"SET_POWER_OFF":[8,34,0,0,0,1,213],
