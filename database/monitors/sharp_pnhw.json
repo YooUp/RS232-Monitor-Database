@@ -4,6 +4,7 @@
 	"baudrate":9600,
 	"stopbit":1,
 	"parity":0,
+	"models":["PNHW551"],
 	"commands":{
 		"SET_ON":[80,79,87,82,48,48,48,49,13],
 		"SET_OFF":[80,79,87,82,48,48,48,48,13],

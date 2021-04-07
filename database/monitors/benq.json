@@ -4,6 +4,7 @@
 	"baudrate":9600,
 	"stopbit":1,
 	"parity":0,
+	"models":["RP654K"],
 	"commands":{
 		"SET_POWER_ON":[56,48,49,115,33,48,48,49,13],
 		"SET_POWER_OFF":[56,48,49,115,33,48,48,50,13],
