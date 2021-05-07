@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/YooUp/RS232-Monitor-Commands/Pipeline)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/YooUp/RS232-Monitor-Database/Pipeline)
 
 # RS232 Monitor Commands
 
@@ -6,16 +6,16 @@ This is a public database for all the known RS232 commands for professionnal scr
 
 ## Supported monitors
 
-Check the [MONITORS.md](https://github.com/YooUp/RS232-Monitor-Commands/blob/master/MONITORS.md) file for a full list of supported monitors.
+Check the [MONITORS.md](https://github.com/YooUp/RS232-Monitor-Database/blob/master/MONITORS.md) file for a full list of supported monitors.
 
 ## Restful API
 
-You can acces the latest database from your third party application by doing a GET request at the following url : https://yooup.github.io/RS232-Monitor-Commands/monitors.json
-You can also query by monitor (eg. : https://yooup.github.io/RS232-Monitor-Commands/monitors/benq.json).
+You can acces the latest database from your third party application by doing a GET request at the following url : https://yooup.github.io/RS232-Monitor-Database/monitors.json
+You can also query by monitor (eg. : https://yooup.github.io/RS232-Monitor-Database/monitors/benq.json).
 
 ## Database structure
 
-The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/blob/master/database/monitors.json). Its structure is the following :
+The database is a [json file](https://github.com/YooUp/RS232-Monitor-Database/blob/master/database/monitors.json). Its structure is the following :
 
 #### General structure
 
@@ -57,7 +57,8 @@ The database is a [json file](https://github.com/YooUp/RS232-Monitor-Commands/bl
 If the monitor you want to work on is not in the database, please share the RS232 codes with us by adding it:
 
 - Fork
-- Create a new json file in the [following directory](https://github.com/YooUp/RS232-Monitor-Commands/tree/master/database/monitors). Make sure that the structure is correct
+- Create a new json file in the [following directory](https://github.com/YooUp/RS232-Monitor-Database/tree/master/database/monitors)
+- Check the json syntax with [JsonLint](https://jsonlint.com/)
 - Commit
 - Pull request
 
