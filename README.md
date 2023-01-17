@@ -1,4 +1,4 @@
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/YooUp/RS232-Monitor-Database/Pipeline)
+![GitHub Workflow Status](https://img.shields.io/github/actions/workflow/status/YooUp/RS232-Monitor-Database/pipeline.yml?branch=master)
 
 # RS232 Monitor Commands
 
